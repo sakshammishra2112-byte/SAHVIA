@@ -1,0 +1,9 @@
+SpeechRecognition==3.17.0
+PyAudio==0.2.14
+edge-tts==7.2.8
+pygame==2.6.1
+PyAutoGUI==0.9.54
+Pillow==12.3.0
+pytesseract==0.3.13
+requests==2.34.2
+wikipedia==1.4.0
