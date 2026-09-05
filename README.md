@@ -114,3 +114,31 @@ This is an active project, not a finished production assistant. I am currently w
 The project currently targets Windows because several computer-control tools use Windows-specific behavior.
 
 Do not commit API keys, passwords, tokens, `.env` files, virtual environments, or generated local files.
+
+
+## SAHVIA Web Gateway
+
+The project includes an optional browser interface that connects to the same local
+SAHVIA router and tools.
+
+Run it from the project root:
+
+```bash
+python web/app.py
+```
+
+Then open:
+
+```text
+http://127.0.0.1:8000
+```
+
+The gateway prints a temporary password when it starts. For a fixed password,
+set `SAHVIA_WEB_PASSWORD` before starting the gateway.
+
+### Important
+
+This web gateway controls the local Windows computer through SAHVIA's existing
+tools. Do not expose it directly to the public internet without authentication
+and an appropriate access-control layer. For a buildathon demo, use a protected
+tunnel/access layer rather than publishing the raw port.
